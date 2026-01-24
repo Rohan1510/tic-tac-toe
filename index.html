@@ -2,28 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Tic Tac Toe</title>
+  <title>Multiplayer Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>Tic Tac Toe</h1>
+  <div class="game-container">
+    <h1>Tic Tac Toe</h1>
 
-  <div id="board">
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
+    <p id="status">Connecting to server...</p>
+
+    <!-- GAME BOARD -->
+    <div id="board">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+      <button onclick="createGame()">Create Game</button>
+    </div>
+
+    <input
+      type="text"
+      id="gameCode"
+      placeholder="Enter Game Code"
+      autocomplete="off"
+    />
+
+    <div class="controls">
+      <button class="secondary" onclick="joinGame()">Join Game</button>
+    </div>
   </div>
 
-  <p id="status"></p>
-  <button onclick="restartGame()">Restart</button>
-
+  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
