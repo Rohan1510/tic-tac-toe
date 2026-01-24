@@ -11,8 +11,9 @@
 <body>
 
   <div class="game-container">
-    <h1>Tic Tac Toe</h1>
+    <h1>Multiplayer Tic Tac Toe</h1>
 
+    <!-- STATUS -->
     <p id="status">Connecting to server...</p>
 
     <!-- GAME BOARD -->
@@ -35,6 +36,7 @@
       <button onclick="createGame()">Create Game</button>
     </div>
 
+    <!-- JOIN GAME -->
     <input
       type="text"
       id="gameCode"
@@ -44,6 +46,11 @@
 
     <div class="controls">
       <button class="secondary" onclick="joinGame()">Join Game</button>
+    </div>
+
+    <!-- RESTART GAME -->
+    <div class="controls">
+      <button class="secondary" onclick="restartGame()">Restart Game</button>
     </div>
   </div>
 
