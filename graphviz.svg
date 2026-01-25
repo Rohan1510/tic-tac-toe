@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="912pt" height="215pt" viewBox="0.00 0.00 912.00 215.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 210.52)">
+<title>MultiplayerTicTacToe</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-210.52 907.86,-210.52 907.86,4 -4,4"/>
+<!-- PlayerA -->
+<g id="node1" class="node">
+<title>PlayerA</title>
+<polygon fill="#e0f2fe" stroke="black" points="76.67,-135.3 0,-135.3 0,-93.7 76.67,-93.7 76.67,-135.3"/>
+<text xml:space="preserve" text-anchor="middle" x="38.33" y="-118.7" font-family="Arial" font-size="14.00">Player A</text>
+<text xml:space="preserve" text-anchor="middle" x="38.33" y="-101.9" font-family="Arial" font-size="14.00">(Browser)</text>
+</g>
+<!-- APIGateway -->
+<g id="node3" class="node">
+<title>APIGateway</title>
+<polygon fill="#fde68a" stroke="black" points="340.61,-135.3 217.25,-135.3 217.25,-93.7 340.61,-93.7 340.61,-135.3"/>
+<text xml:space="preserve" text-anchor="middle" x="278.93" y="-118.7" font-family="Arial" font-size="14.00">API Gateway</text>
+<text xml:space="preserve" text-anchor="middle" x="278.93" y="-101.9" font-family="Arial" font-size="14.00">(WebSocket API)</text>
+</g>
+<!-- PlayerA&#45;&gt;APIGateway -->
+<g id="edge1" class="edge">
+<title>PlayerA-&gt;APIGateway</title>
+<path fill="none" stroke="black" d="M77.14,-114.5C111.56,-114.5 163.33,-114.5 205.68,-114.5"/>
+<polygon fill="black" stroke="black" points="205.55,-118 215.55,-114.5 205.55,-111 205.55,-118"/>
+<text xml:space="preserve" text-anchor="middle" x="146.96" y="-118.7" font-family="Times,serif" font-size="14.00">WebSocket</text>
+</g>
+<!-- PlayerB -->
+<g id="node2" class="node">
+<title>PlayerB</title>
+<polygon fill="#e0f2fe" stroke="black" points="573.8,-200.3 497.13,-200.3 497.13,-158.7 573.8,-158.7 573.8,-200.3"/>
+<text xml:space="preserve" text-anchor="middle" x="535.46" y="-183.7" font-family="Arial" font-size="14.00">Player B</text>
+<text xml:space="preserve" text-anchor="middle" x="535.46" y="-166.9" font-family="Arial" font-size="14.00">(Browser)</text>
+</g>
+<!-- PlayerB&#45;&gt;APIGateway -->
+<g id="edge2" class="edge">
+<title>PlayerB-&gt;APIGateway</title>
+<path fill="none" stroke="black" d="M496.69,-168.67C486.82,-165.95 476.17,-163.12 466.28,-160.7 418.74,-149.03 406.06,-149.53 358.61,-137.5 356.35,-136.92 354.05,-136.33 351.73,-135.72"/>
+<polygon fill="black" stroke="black" points="352.83,-132.39 342.27,-133.16 351.01,-139.14 352.83,-132.39"/>
+<text xml:space="preserve" text-anchor="middle" x="412.44" y="-164.9" font-family="Times,serif" font-size="14.00">WebSocket</text>
+</g>
+<!-- APIGateway&#45;&gt;PlayerA -->
+<g id="edge7" class="edge">
+<title>APIGateway-&gt;PlayerA</title>
+<path fill="none" stroke="black" d="M216.81,-96.7C210.91,-95.48 204.99,-94.44 199.25,-93.7 153.15,-87.71 140.4,-85.38 94.67,-93.7 92.38,-94.11 90.07,-94.62 87.74,-95.19"/>
+<polygon fill="black" stroke="black" points="87.01,-91.76 78.38,-97.9 88.96,-98.48 87.01,-91.76"/>
+<text xml:space="preserve" text-anchor="middle" x="146.96" y="-97.9" font-family="Times,serif" font-size="14.00">Real-time Updates</text>
+</g>
+<!-- APIGateway&#45;&gt;PlayerB -->
+<g id="edge8" class="edge">
+<title>APIGateway-&gt;PlayerB</title>
+<path fill="none" stroke="black" d="M298.61,-135.56C313.26,-150.4 335.05,-169.07 358.61,-177.5 399.6,-192.15 449.48,-191.1 485.63,-187.29"/>
+<polygon fill="black" stroke="black" points="485.82,-190.79 495.35,-186.15 485.01,-183.84 485.82,-190.79"/>
+<text xml:space="preserve" text-anchor="middle" x="412.44" y="-193.92" font-family="Times,serif" font-size="14.00">Real-time Updates</text>
+</g>
+<!-- Lambda -->
+<g id="node4" class="node">
+<title>Lambda</title>
+<polygon fill="#fecaca" stroke="black" points="586.65,-62.3 484.28,-62.3 484.28,-20.7 586.65,-20.7 586.65,-62.3"/>
+<text xml:space="preserve" text-anchor="middle" x="535.46" y="-45.7" font-family="Arial" font-size="14.00">AWS Lambda</text>
+<text xml:space="preserve" text-anchor="middle" x="535.46" y="-28.9" font-family="Arial" font-size="14.00">(Game Logic)</text>
+</g>
+<!-- APIGateway&#45;&gt;Lambda -->
+<g id="edge3" class="edge">
+<title>APIGateway-&gt;Lambda</title>
+<path fill="none" stroke="black" d="M308,-93.39C322.41,-83.61 340.67,-72.74 358.61,-66.3 379.14,-58.92 430.72,-52.12 472.74,-47.51"/>
+<polygon fill="black" stroke="black" points="472.95,-51.01 482.52,-46.46 472.2,-44.05 472.95,-51.01"/>
+<text xml:space="preserve" text-anchor="middle" x="412.44" y="-120.9" font-family="Times,serif" font-size="14.00">Route: createGame</text>
+<text xml:space="preserve" text-anchor="middle" x="412.44" y="-104.1" font-family="Times,serif" font-size="14.00">joinGame</text>
+<text xml:space="preserve" text-anchor="middle" x="412.44" y="-87.3" font-family="Times,serif" font-size="14.00">makeMove</text>
+<text xml:space="preserve" text-anchor="middle" x="412.44" y="-70.5" font-family="Times,serif" font-size="14.00">restartGame</text>
+</g>
+<!-- Lambda&#45;&gt;APIGateway -->
+<g id="edge6" class="edge">
+<title>Lambda-&gt;APIGateway</title>
+<path fill="none" stroke="black" d="M492.23,-20.23C455.24,-4.77 400.94,10.11 358.61,-10.9 328.34,-25.92 306.57,-58.77 293.71,-83.48"/>
+<polygon fill="black" stroke="black" points="290.73,-81.62 289.42,-92.14 297,-84.73 290.73,-81.62"/>
+<text xml:space="preserve" text-anchor="middle" x="412.44" y="-31.9" font-family="Times,serif" font-size="14.00">PostToConnection</text>
+<text xml:space="preserve" text-anchor="middle" x="412.44" y="-15.1" font-family="Times,serif" font-size="14.00">(Game Updates)</text>
+</g>
+<!-- DynamoDB -->
+<g id="node5" class="node">
+<title>DynamoDB</title>
+<polygon fill="#d1fae5" stroke="black" points="903.86,-62.3 761.03,-62.3 761.03,-20.7 903.86,-20.7 903.86,-62.3"/>
+<text xml:space="preserve" text-anchor="middle" x="832.44" y="-45.7" font-family="Arial" font-size="14.00">Amazon DynamoDB</text>
+<text xml:space="preserve" text-anchor="middle" x="832.44" y="-28.9" font-family="Arial" font-size="14.00">(Game State)</text>
+</g>
+<!-- Lambda&#45;&gt;DynamoDB -->
+<g id="edge4" class="edge">
+<title>Lambda-&gt;DynamoDB</title>
+<path fill="none" stroke="black" d="M586.84,-41.5C631.37,-41.5 697.17,-41.5 749.31,-41.5"/>
+<polygon fill="black" stroke="black" points="749.04,-45 759.04,-41.5 749.04,-38 749.04,-45"/>
+<text xml:space="preserve" text-anchor="middle" x="673.84" y="-45.7" font-family="Times,serif" font-size="14.00">Read / Write Game Data</text>
+</g>
+<!-- DynamoDB&#45;&gt;Lambda -->
+<g id="edge5" class="edge">
+<title>DynamoDB-&gt;Lambda</title>
+<path fill="none" stroke="black" d="M760.76,-23.35C754.79,-22.28 748.82,-21.37 743.03,-20.7 681.94,-13.61 665.48,-11.62 604.65,-20.7 602.49,-21.02 600.31,-21.39 598.11,-21.81"/>
+<polygon fill="black" stroke="black" points="597.58,-18.35 588.57,-23.93 599.09,-25.18 597.58,-18.35"/>
+<text xml:space="preserve" text-anchor="middle" x="673.84" y="-24.9" font-family="Times,serif" font-size="14.00">Fetch Game State</text>
+</g>
+</g>
+</svg>

@@ -82,6 +82,11 @@ tic-tac-toe/
 ├── script.js
 └── README.md
 🙌 Author
+## 🏗️ Architecture Diagram
+
+![Architecture Diagram](graphviz.svg)
+
+> Real-time multiplayer architecture using AWS WebSocket API Gateway, Lambda, and DynamoDB.
 
 Rohan
 GitHub: https://github.com/Rohan1510
