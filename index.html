@@ -16,64 +16,41 @@
     <!-- STATUS -->
     <p id="status">Connecting to server...</p>
 
-    <!-- PLAYER INDICATORS -->
-    <div class="player-indicators">
-      <div class="player" id="player-x">
-        <span class="player-symbol">X</span>
-        <span class="player-label">Your Symbol</span>
-      </div>
-      <div class="vs">vs</div>
-      <div class="player" id="player-o">
-        <span class="player-symbol">O</span>
-        <span class="player-label">Opponent</span>
-      </div>
-    </div>
-
-    <!-- TURN INDICATOR -->
-    <div class="turn-indicator">
-      <p id="turn-text">Waiting for opponent...</p>
-    </div>
-
     <!-- GAME BOARD -->
-    <div id="board-container">
-      <div id="board">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+    <div id="board">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
 
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
 
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-      </div>
-      <svg id="strike-line" viewBox="0 0 400 400">
-        <line id="strike" x1="0" y1="0" x2="0" y2="0" stroke="#fbbf24" stroke-width="12" stroke-linecap="round" />
-      </svg>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
     </div>
 
     <!-- CONTROLS -->
-    <div class="game-controls">
-      <div class="button-group">
-        <button class="primary" onclick="createGame()">Create Game</button>
-      </div>
+    <div class="controls">
+      <button onclick="createGame()">Create Game</button>
+    </div>
 
-      <div class="join-section">
-        <p class="join-label">or join an existing game:</p>
-        <div class="input-group">
-          <input
-            type="text"
-            id="gameCode"
-            placeholder="Enter Game Code"
-            autocomplete="off"
-          />
-          <button class="secondary" onclick="joinGame()">Join</button>
-        </div>
-      </div>
+    <!-- JOIN GAME -->
+    <input
+      type="text"
+      id="gameCode"
+      placeholder="Enter Game Code"
+      autocomplete="off"
+    />
 
-      <button class="restart-btn" onclick="restartGame()">Restart Game</button>
+    <div class="controls">
+      <button class="secondary" onclick="joinGame()">Join Game</button>
+    </div>
+
+    <!-- RESTART GAME -->
+    <div class="controls">
+      <button class="secondary" onclick="restartGame()">Restart Game</button>
     </div>
   </div>
 
